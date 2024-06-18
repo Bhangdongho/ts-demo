@@ -1,11 +1,26 @@
-let student = {
-  name: "john",
-  course: "typescript",
-  score: 10,
-  grade: function () {
-    console.log("A");
-  },
-};
+// 변수의 데이터 타입 명시
 
-student.name = "lee";
-student.score = 200;
+let stdId: number = 1111;
+let stdName: string = "lee";
+let age: number = 20;
+let gender: string = "male";
+let course: string = "Typescript";
+let completed: boolean = false;
+
+function getInfo(id: number): {
+  stdId: number;
+  stdName: string;
+  age: number;
+  gender: string;
+  course: string;
+  completed: boolean;
+} {
+  return null;
+}
+
+// 함수의 데이터 타입 명시(매개변수, 리턴타입)
+function Plus(a: number, b: number): number {
+  return a + b;
+}
+
+// void라고 쓰면 아무것도 리턴하지 않게 된다.
